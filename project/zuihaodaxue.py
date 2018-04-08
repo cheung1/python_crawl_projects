@@ -30,14 +30,13 @@ def printUnivList(ulist, num):
         print(tplt.format(u[0], u[1], u[2], u[3], chr(12288)))
     print("Suc" + str(num))
 
-def main():
+if __name__ == '__main__':
     uinfo = []
-    url = "http://www.zuihaodaxue.com/zuihaodaxuepaiming2018.html"
+    url = "http://www.zuihaodaxue.com/FieldENG2016.html"
     html = getHTMLText(url)
     fillUnivList(uinfo, html)
     printUnivList(uinfo, 20)    # 20 univers
 
-main()
 
 
 
